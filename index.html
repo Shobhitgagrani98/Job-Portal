@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="app.js">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="" method="POST" id="registrationform">
+    <h1>Register</h1>
+    <div class="alert">Message Sent</div>
+    <fieldset>
+        <legend><span class="section">1</span>Your Basic Info</legend>
+        <label class="" for="name">Name:</label>
+        <input type="text" name="name" value="" id="name" placeholder="Name/ नाम" required autofocus>
+
+        <label class="" for="phonenumber">Phone Number:</label>
+        <input type="text" name="phonenumber" value="" id="phonenumber"  placeholder="Phone Number/ फ़ोन नंबर" required>
+
+        <label for="age">Age:</label>
+        <input type="text" name="age" value="" id="age" placeholder="Age/उम्र" required>
+
+        <label for="Location">Location:</label>
+        <input type="text" name="location" value="" id="location" placeholder="PIN CODE/ पिन कोड" required>
+        <label class="" for="bio">Gender:</label>
+        <select name="gender">
+            <option value="male">Male / नर</option>
+            <option value="female">Female / महिला</option>
+        </select>
+
+        <label for="job">Job Role:</label>
+        <select name="job" id="job" required>
+            <option value="majdoor">Majdoor / मजदूर</option>
+            <option value="construction">construction / निर्माण</option>
+            <option value="plumber">Plumber / प्लम्बर</option>
+            <option value="painter">Painter/</option>
+            <option value="electrician">Electrician / बिजली मिस्त्री</option>
+            <option value="other">Other</option>
+        </select>
+    </fieldset>
+        <button type="submit" sendMessage()>Register</button>
+    </form>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="app.js"></script>
+</body>
+
+</html>
